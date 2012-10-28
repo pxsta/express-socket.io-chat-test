@@ -64,7 +64,7 @@ describe('socket.io test', function() {
     
     it('1000件接続出来るかどうか。ファイルディスクリプタの最大値を大きくしないと一度に接続できない', function(done) {
         this.timeout(600000);
-        var maxCount = 100;
+        var maxCount = 1000;
         var clientCount = 0;
         var clients = [];
         
